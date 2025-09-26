@@ -453,10 +453,9 @@ class PlayState extends MusicBeatState
 			camPos.y += gf.getGraphicMidpoint().y + gf.cameraPosition[1];
 		}
 
-		if(dad.curCharacter.startsWith('gf')) {
+		if(dad.curCharacter.startsWith('Aite')) {
 			dad.setPosition(GF_X, GF_Y);
-			if(gf != null)
-				gf.visible = false;
+			gf.visible = false;
 		}
 		
 		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
